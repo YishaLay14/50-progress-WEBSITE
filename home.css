@@ -334,11 +334,6 @@ li {
 }
 
 
-.vid1 {
-  height: 360px;
-  width: 560px;
-  
-}
 /* remain ratio */
 .vid-container iframe {
   width: 100%;

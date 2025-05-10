@@ -263,6 +263,36 @@ button:hover{
   margin-top: 0.5rem;
 }
 
+footer {
+  background-color: goldenrod;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.socmed {
+  color: #fff;
+}
+
+.socmed img {
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  transition: all .3s ease .4s;
+
+}
+
+.socmed p {
+  text-align: center;
+}
+
+ img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 1rem 2rem rgba(250, 250, 250, 0.7);
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;

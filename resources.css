@@ -282,7 +282,7 @@ h1:hover {
   }
   
   .v1 h3 {
-    background-color: #6200ea;
+    background-color: #0e5875;
     color: white;
     padding: 0.8rem;
     font-size: 1.1rem;
@@ -355,9 +355,6 @@ h1:hover {
       .v1 {
         width: 90%;
       }
-    
-  
-
   
     .Resources {
       flex: 1 1 100%;
