@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+
+/* Head-text */
+h1 {
+    color: crimson;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0 6px 15px rgba(243, 239, 239, 0.07);
+  }
+  
+  h1:hover {
+    color: rgb(14, 88, 117);
+  }
+  
+  .video-item {
+    margin-bottom: 30px;
+  }
+  
+  video, .responsive-iframe iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: black;
+  }
+  
+  /* Responsive iframe wrapper */
+  .responsive-iframe {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .caption {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Footer */
+  
+footer {
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .socmed {
+    color: #fff;
+  }
+  
+  .socmed img {
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    transition: all .3s ease .4s;
+  
+  }
+  
+  .socmed p {
+    text-align: center;
+  }
+  
+   img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 1rem 2rem rgba(250, 250, 250, 0.7);
+  }

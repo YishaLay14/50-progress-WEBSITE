@@ -1,0 +1,373 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: clamp(1.4rem, 1.6vw, 1.6rem);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(241, 225, 171, 0.4), rgba(226, 217, 167, 0.2));
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.nav-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-links,
+.nav-link-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links {
+  color: #141212;
+  font-size: clamp(1.4rem, 1.6vw, 1.9rem);
+  padding: 0.8rem 1.6rem;
+  position: relative;
+}
+
+.nav-links:hover {
+  background-color: gold;
+}
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: gold;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s;
+}
+
+.nav-links:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-link-btn {
+  background-color: goldenrod;
+  color: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 900;
+}
+
+.nav-link-btn:hover {
+  background-color: gold;
+  transform: scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(255, 219, 60, 0.7);
+}
+
+
+h1 {
+  color: darkred;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  box-shadow: 0 6px 15px rgba(243, 239, 239, 0.07);
+}
+
+h1:hover {
+  color: rgb(14, 88, 117);
+}
+
+  .container  .Resources{
+   margin-bottom: 50px;
+    
+  }
+  .ptext {
+    text-align: center;
+    margin-top: -35px;
+  }
+  
+  .Resources h2 {
+    color: #0e5875;
+    font-size: 2.4rem;
+    margin: 1rem 0 1.5rem;
+    text-align: center;
+  }
+  
+  .Resources h2:hover {
+    color: darkred;
+  }
+
+  .Resources p {
+    color: #141212;
+    font-size: 12px;
+  }
+
+  .Resources-container {
+   
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .Resources {
+    flex: 1 1 280px;
+    background-color: white;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .Resources:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .songs,
+  .music-sheets,
+  .lyrics,
+  .videos {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .songs {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .songs:hover {
+    transform: translateY(-8px);
+    color: goldenrod;
+  }
+  
+  audio {
+    width: 100%;
+  }
+  
+  h2 a {
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  .music-sheets a,
+  .lyrics a,
+  .videos a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  
+  .music-sheets a:hover,
+  .lyrics a:hover,
+  .videos a:hover {
+    color: goldenrod;
+    text-decoration: underline;
+  }
+
+  .h3{
+    font-weight: 100;
+    font-size: smaller;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 320px;
+    overflow-y: auto;
+  }
+  
+  .gallery img {
+    width: 48%;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  a:focus,
+  button:focus,
+  input:focus {
+    outline: 3px dashed goldenrod;
+    outline-offset: 4px;
+  }
+
+  .event-card {
+    gap: 30px;
+    margin-top: 100px;
+  }
+
+  /*Vedio*/
+  .Resources {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .Resources h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .Resources h2 p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+  }
+  
+  /* Video Container */
+  .vid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Individual Video Card */
+  .v1 {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .v1:hover {
+    transform: scale(1.01);
+  }
+  
+  .v1 h3 {
+    background-color: #6200ea;
+    color: white;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Image Styling */
+  .v2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /*  */
+
+  footer {
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .socmed {
+    color: #fff;
+  }
+
+  .socmed img {
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    transition: all .3s ease .4s;
+
+  }
+
+  .socmed p {
+    text-align: center;
+  }
+
+   img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 1rem 2rem rgba(250, 250, 250, 0.7);
+  }
+
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .nav-box {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .nav-links,
+    .nav-link-btn {
+      font-size: 1.5rem;
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+
+      .vid-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .v1 {
+        width: 90%;
+      }
+    
+  
+
+  
+    .Resources {
+      flex: 1 1 100%;
+    }
+
+    .event-card {
+      gap: 10px;
+    }
+  
+    .gallery img {
+      width: 100%;
+    }
+  }

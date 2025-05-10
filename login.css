@@ -1,85 +1,103 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: white;
-    color:#333;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
-    background-color:whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) ;
-    width: 400px;
+    min-height: 100vh;
+  }
+  
+  .container {
     text-align: center;
-
-}
-
-.h1{
-    color:gold;
-    font-size: 4rem;
-    font-weight: 0;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-
-}
-
-.h2{
-    color:white;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 80%;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: goldenrod;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: rgb(250, 174, 10);
+  }
+  
+  /* Hide radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Tab Labels */
+  .tab-labels {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .tab-labels label {
     padding: 10px;
-    margin: 9px 0;
-    border: none;
-    border-radius: 5px ;
-
-}
-
-button {
-    width: 30%;
-    padding:10px;
+    flex: 1;
+    background-color: lightgray;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  #login-tab:checked ~ .tab-labels label[for="login-tab"],
+  #signup-tab:checked ~ .tab-labels label[for="signup-tab"] {
+    background-color: goldenrod;
+    color: white;
+  }
+  
+  /* Form Containers */
+  .form-content {
+    display: none;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #login-tab:checked ~ #login-form {
+    display: block;
+  }
+  
+  #signup-tab:checked ~ #signup-form {
+    display: block;
+  }
+  
+  /* Form Inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 10px;
     background-color: goldenrod;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: all .2s ease .3s;
-    font-size: 13px;
-}
-
-a{
-    text-decoration: none;
     color: white;
-    z-index: 10px;
-    font-weight: 400;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-}
-
-button:hover{
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
     background-color: gold;
-    transform: scale(1.1);
-    box-shadow: 0 1rem 2rem  rgba(255, 219, 60, 0.7);
-}
-
-label {
-    color: black;
-    font-weight: 700;
-}
-
-input[type="input"] {
-    display: none;
-}
-
-#login:checked ~ .form-container #login-form,
-#signup:checked ~ .form-container #signup-form {
-    display: block;
-}
-
+    transform: scale(1.05);
+  }
+  
+  

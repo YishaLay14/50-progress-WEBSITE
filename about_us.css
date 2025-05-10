@@ -1,0 +1,338 @@
+*,
+*::before
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 65.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: clamp(1.4rem, 1.6vw, 1.6rem);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(241, 225, 171, 0.4), rgba(226, 217, 167, 0.2));
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.nav-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-links,
+.nav-link-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links {
+  color: #141212;
+  font-size: clamp(1.4rem, 1.6vw, 1.9rem);
+  padding: 0.8rem 1.6rem;
+  position: relative;
+}
+
+.nav-links:hover {
+  background-color: gold;
+}
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: gold;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s;
+}
+
+.nav-links:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-link-btn {
+  background-color: goldenrod;
+  color: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 900;
+}
+
+.nav-link-btn:hover {
+  background-color: gold;
+  transform: scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(255, 219, 60, 0.7);
+}
+
+
+
+h1 {
+  color: darkred;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  box-shadow: 0 6px 15px rgba(243, 239, 239, 0.07);
+}
+
+h1:hover {
+  color: rgb(14, 88, 117);
+}
+
+h2 {
+  margin-left: 25px;
+}
+
+
+section {
+  background: white;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+.mission-vision {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  border-radius: 15px;
+}
+.mission-vision p {
+  font-size: 1.1em;
+  margin-top: 0.4em;
+}
+
+.mission {
+  background: goldenrod;
+  color: #fff;
+  width:100%;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.mission:hover {
+  transform: translateY(1.2rem);
+}
+
+.vision {
+  background: rgb(243, 242, 241);
+  color: #0a0a0a;
+  display: flex;
+  width:100%;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.vision p {
+  padding: 10px;
+}
+
+.vision:hover {
+  transform: translateY(1.2rem);
+}
+
+.our-team {
+  text-align: center;
+}
+
+
+.Choir-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.Choir-member {
+  background: #e8f5e9;
+  border-radius: 10px;
+  border: 1px solid goldenrod;
+  flex: 1 1 140px;
+  width: 100%;
+  height: auto;
+  padding: 5rem;
+  margin-bottom: 30px ;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Choir-member:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+  border: 3px solid goldenrod;
+}
+.Choir-member h3 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: goldenrod; 
+}
+.Choir-member p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: black;
+}
+
+/*footer*/
+footer {
+  background-color: goldenrod;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.socmed {
+  color: #fff;
+}
+
+.socmed img {
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  transition: all .3s ease .4s;
+
+}
+
+.socmed p {
+  text-align: center;
+}
+
+ img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 1rem 2rem rgba(250, 250, 250, 0.7);
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-box {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links,
+  .nav-link-btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+
+    .mission-vision {
+      display: block;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.5s ease;
+      border-radius: 15px;
+      width: 390px;
+    }
+    .mission-vision p {
+      font-size: 1.1em;
+      margin-top: 0.4em;
+    }
+    
+    .mission {
+      background: goldenrod;
+      color: #fff;
+      width:100%;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 25px;
+    }
+    
+    .mission:hover {
+      transform: translateY(1.2rem);
+    }
+    
+    .vision {
+      background: rgb(243, 242, 241);
+      color: #0a0a0a;
+      display: flex;
+      width:100%;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    
+    .vision p {
+      padding: 9px;
+    }
+    
+    .vision:hover {
+      transform: translateY(1.2rem);
+    }
+
+    .about_us {
+      padding: 30px 15px;
+  }
+  section {
+    padding: 20px 15px;
+  }
+}

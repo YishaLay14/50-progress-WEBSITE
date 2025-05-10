@@ -1,0 +1,213 @@
+/*Landing Page Responsive*/
+
+@media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+   
+    .nav-box {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .nav-links,
+    .nav-link-btn {
+      font-size: 1.5rem;
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+  
+  
+    /*ubos sa h1*/
+      .shortcut {
+        font-size: 1rem;
+      }
+
+      /*Index-Pictures*/  
+      .card {
+        height: 150px;
+        max-width: 100%;
+      }
+/*index-butoons*/
+      button {
+        width: 140px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+
+  /*Log-in Query*/
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .tab-labels label {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .form-content {
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  /*home query*/
+  @media (max-width: 600px) {
+
+
+    .header {
+      display: block;
+      background: linear-gradient(rgba(241, 225, 171, 0.4)), rgba(226, 217, 167, 0.2);
+      flex-wrap: wrap;
+    
+    }
+    
+    .logo {
+        margin-left: 40%;
+        width: 80px;
+    
+    .nav-box {
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .nav-links:link,
+    .nav-links:visited{
+      text-decoration: none;
+      color:rgb(20, 18, 18);
+      position: relative;
+      margin-left: 1.5rem;
+      padding: .1rem .4rem;
+      transition: all .3s ease .4s;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      
+      
+    }
+    
+    .nav-links::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: gold;
+      width: 50%;
+      height: 1%;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all .3s;
+      
+    }
+    
+    .nav-links:hover::before,
+    .nav-links:hover::after {
+      transform: scaleX(2);
+    }
+    
+    .nav-links:hover{
+      background-color: gold;
+    
+    }
+
+    .title-text{
+      font-size: 3rem;
+      font-weight: 300;
+      color: black ;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      margin-top: 4rem
+  }
+
+  .shortcut {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 0 30px ;
+    margin: 0;
+}
+
+  .about_us {
+      padding: 30px 15px;
+  }
+
+  h2 {
+      font-size: 1.75em; 
+
+ .about_us p {
+      font-size: 0.95em;
+  }
+}
+ 
+
+.p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 80px;
+}
+
+.Resources {
+  flex: 1 1 100%;
+  margin:0;
+  padding:0;
+}
+
+h2 {
+  font-size: 1.75em; 
+}
+
+p, li {
+  font-size: 0.95em; 
+}
+}
+ 
+    iframe {
+      display: flex;
+      height: 250px;
+      width: 250px;
+      gap:1px;
+    }
+
+  .vid2 {
+    margin-top: -85px;
+  }
+
+    .news-announcements {
+      padding: 20px; 
+  }
+
+  .news-announcements h1 {
+      font-size: 1.5em; 
+  }
+
+  .announcement h2 {
+      font-size: 1.2em;
+  }
+
+  .news-announcements p {
+      font-size: 0.9em;
+}
+  }
